@@ -1,3 +1,4 @@
+import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import Benefit from '../Benefit/Benefit';
 
@@ -15,6 +16,7 @@ const PricingOption = (props) => {
                 {
                     benefits.map(benefit => <Benefit benefit={benefit} />)
                 }
+                <button className='bg-red-500 rounded p-2 mt-4 flex items-center'>Subscribe<ArrowSmallRightIcon className='w-5 h-5'></ArrowSmallRightIcon></button>
             </div>
 
         </div>
